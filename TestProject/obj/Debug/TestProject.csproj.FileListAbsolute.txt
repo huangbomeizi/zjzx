@@ -1,0 +1,7 @@
+D:\dev\质检中心\zjzx\TestProject\bin\Debug\TestProject.dll
+D:\dev\质检中心\zjzx\TestProject\bin\Debug\TestProject.pdb
+D:\dev\质检中心\zjzx\TestProject\bin\Debug\zjzx.dll
+D:\dev\质检中心\zjzx\TestProject\bin\Debug\zjzx.pdb
+D:\dev\质检中心\zjzx\TestProject\obj\Debug\ResolveAssemblyReference.cache
+D:\dev\质检中心\zjzx\TestProject\obj\Debug\TestProject.dll
+D:\dev\质检中心\zjzx\TestProject\obj\Debug\TestProject.pdb

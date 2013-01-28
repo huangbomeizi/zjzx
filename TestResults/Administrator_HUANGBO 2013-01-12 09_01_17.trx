@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="b8706e5d-de42-494e-bdd7-8858f76734ad" name="Administrator@HUANGBO 2013-01-12 09:01:17" runUser="HUANGBO\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="50217ff5-54f5-4137-b9f0-540332b39484">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="D:\dev\质检中心\zjzx\TestResults\Administrator_HUANGBO 2013-01-12 09_01_17">
+      <DeploymentItem filename="D:\dev\质检中心\zjzx\zjzx\bin\zjzx.dll" />
+    </Deployment>
+    <Plugins>
+      <Plugin>Microsoft.VisualStudio.TestTools.HostAdapters.AspNetPlugin, Microsoft.VisualStudio.QualityTools.HostAdapters.ASPNETAgent</Plugin>
+    </Plugins>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Inconclusive">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="1" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2013-01-12T09:01:17.9375000+08:00" queuing="2013-01-12T09:01:18.5156250+08:00" start="2013-01-12T09:01:18.6562500+08:00" finish="2013-01-12T09:01:43.7343750+08:00" />
+  <TestDefinitions>
+    <UnitTest name="batchDeleteTest" storage="d:\dev\质检中心\zjzx\testproject\bin\debug\testproject.dll" id="03af4277-d246-7bc7-fc48-3916c120e004">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="f9d88a8f-0057-4a4e-b570-ac1458d4e017" />
+      <TestMethod codeBase="D:\dev\质检中心\zjzx\TestProject\bin\Debug\TestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.BZDaoTest, TestProject" name="batchDeleteTest" />
+      <AspNet webSiteUrl="http://localhost:1269/">
+        <Host pathToWebApp="%PathToWebRoot%\zjzx\zjzx" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="03af4277-d246-7bc7-fc48-3916c120e004" executionId="f9d88a8f-0057-4a4e-b570-ac1458d4e017" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="f9d88a8f-0057-4a4e-b570-ac1458d4e017" testId="03af4277-d246-7bc7-fc48-3916c120e004" testName="batchDeleteTest" computerName="HUANGBO" duration="00:00:00.4682486" startTime="2013-01-12T09:01:39.5156250+08:00" endTime="2013-01-12T09:01:41.9843750+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   在 TestProject.BZDaoTest.batchDeleteTest() 位置 D:\dev\质检中心\zjzx\TestProject\BZDaoTest.cs:行号 110
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

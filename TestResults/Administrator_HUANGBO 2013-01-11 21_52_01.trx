@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="9b5800bf-54ec-42b6-a388-40ee6565a1dd" name="Administrator@HUANGBO 2013-01-11 21:52:01" runUser="HUANGBO\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="50217ff5-54f5-4137-b9f0-540332b39484">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="D:\dev\质检中心\zjzx\TestResults\Administrator_HUANGBO 2013-01-11 21_52_01">
+      <DeploymentItem filename="D:\dev\质检中心\zjzx\zjzx\bin\zjzx.dll" />
+    </Deployment>
+    <Plugins>
+      <Plugin>Microsoft.VisualStudio.TestTools.HostAdapters.AspNetPlugin, Microsoft.VisualStudio.QualityTools.HostAdapters.ASPNETAgent</Plugin>
+    </Plugins>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2013-01-11T21:52:01.1875000+08:00" queuing="2013-01-11T21:52:01.6406250+08:00" start="2013-01-11T21:52:01.7656250+08:00" finish="2013-01-11T21:52:26.2656250+08:00" />
+  <TestDefinitions>
+    <UnitTest name="getListTest" storage="d:\dev\质检中心\zjzx\testproject\bin\debug\testproject.dll" id="1ee2a08a-19a4-0172-ec13-8279d9a42621">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="4ad582f8-f49f-4dba-a912-03c1af93ed6b" />
+      <TestMethod codeBase="D:\dev\质检中心\zjzx\TestProject\bin\Debug\TestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.BZDaoTest, TestProject" name="getListTest" />
+      <AspNet webSiteUrl="http://localhost:1269/">
+        <Host pathToWebApp="%PathToWebRoot%\zjzx\zjzx" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1ee2a08a-19a4-0172-ec13-8279d9a42621" executionId="4ad582f8-f49f-4dba-a912-03c1af93ed6b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="4ad582f8-f49f-4dba-a912-03c1af93ed6b" testId="1ee2a08a-19a4-0172-ec13-8279d9a42621" testName="getListTest" computerName="HUANGBO" duration="00:00:00.0866230" startTime="2013-01-11T21:52:22.8906250+08:00" endTime="2013-01-11T21:52:24.4687500+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <StdOut>ewwe;tttt;2012-12-2 0:00:00
+ewwe2;tttt2;2012-12-2 0:00:00</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="2e5cbbbb-8864-4e31-b86b-1215c8db1d43" name="Administrator@HUANGBO 2013-01-12 08:52:46" runUser="HUANGBO\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="50217ff5-54f5-4137-b9f0-540332b39484">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="D:\dev\质检中心\zjzx\TestResults\Administrator_HUANGBO 2013-01-12 08_52_46">
+      <DeploymentItem filename="D:\dev\质检中心\zjzx\zjzx\bin\zjzx.dll" />
+    </Deployment>
+    <Plugins>
+      <Plugin>Microsoft.VisualStudio.TestTools.HostAdapters.AspNetPlugin, Microsoft.VisualStudio.QualityTools.HostAdapters.ASPNETAgent</Plugin>
+    </Plugins>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2013-01-12T08:52:46.6406250+08:00" queuing="2013-01-12T08:52:47.0781250+08:00" start="2013-01-12T08:52:47.1875000+08:00" finish="2013-01-12T08:53:11.8125000+08:00" />
+  <TestDefinitions>
+    <UnitTest name="batchDeleteTest" storage="d:\dev\质检中心\zjzx\testproject\bin\debug\testproject.dll" id="03af4277-d246-7bc7-fc48-3916c120e004">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="0efc6a4f-10f8-4831-8129-4a2039e9ff33" />
+      <TestMethod codeBase="D:\dev\质检中心\zjzx\TestProject\bin\Debug\TestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.BZDaoTest, TestProject" name="batchDeleteTest" />
+      <AspNet webSiteUrl="http://localhost:1269/">
+        <Host pathToWebApp="%PathToWebRoot%\zjzx\zjzx" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="03af4277-d246-7bc7-fc48-3916c120e004" executionId="0efc6a4f-10f8-4831-8129-4a2039e9ff33" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="0efc6a4f-10f8-4831-8129-4a2039e9ff33" testId="03af4277-d246-7bc7-fc48-3916c120e004" testName="batchDeleteTest" computerName="HUANGBO" duration="00:00:00.0879905" startTime="2013-01-12T08:53:08.2343750+08:00" endTime="2013-01-12T08:53:10.1562500+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestProject.BZDaoTest.batchDeleteTest threw exception:  System.Data.SqlClient.SqlException: '@IDS' 附近有语法错误。.</Message>
+          <StackTrace>    在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 zjzx.dao.BZDao.batchDelete(String ids) 位置 D:\dev\质检中心\zjzx\zjzx\dao\BZDao.cs:行号 86
+   在 TestProject.BZDaoTest.batchDeleteTest() 位置 D:\dev\质检中心\zjzx\TestProject\BZDaoTest.cs:行号 108
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

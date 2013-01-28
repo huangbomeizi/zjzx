@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="d4fe68bc-e919-4b85-b7fd-317f412e9499" name="Administrator@HUANGBO 2013-01-11 21:49:38" runUser="HUANGBO\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="50217ff5-54f5-4137-b9f0-540332b39484">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="D:\dev\质检中心\zjzx\TestResults\Administrator_HUANGBO 2013-01-11 21_49_38">
+      <DeploymentItem filename="D:\dev\质检中心\zjzx\zjzx\bin\zjzx.dll" />
+    </Deployment>
+    <Plugins>
+      <Plugin>Microsoft.VisualStudio.TestTools.HostAdapters.AspNetPlugin, Microsoft.VisualStudio.QualityTools.HostAdapters.ASPNETAgent</Plugin>
+    </Plugins>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2013-01-11T21:49:38.0781250+08:00" queuing="2013-01-11T21:49:38.5312500+08:00" start="2013-01-11T21:49:38.6250000+08:00" finish="2013-01-11T21:50:03.2343750+08:00" />
+  <TestDefinitions>
+    <UnitTest name="getListTest" storage="d:\dev\质检中心\zjzx\testproject\bin\debug\testproject.dll" id="1ee2a08a-19a4-0172-ec13-8279d9a42621">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="d806b8ca-4664-47ba-9c78-043f56ac5af7" />
+      <TestMethod codeBase="D:\dev\质检中心\zjzx\TestProject\bin\Debug\TestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.BZDaoTest, TestProject" name="getListTest" />
+      <AspNet webSiteUrl="http://localhost:1269/">
+        <Host pathToWebApp="%PathToWebRoot%\zjzx\zjzx" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1ee2a08a-19a4-0172-ec13-8279d9a42621" executionId="d806b8ca-4664-47ba-9c78-043f56ac5af7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d806b8ca-4664-47ba-9c78-043f56ac5af7" testId="1ee2a08a-19a4-0172-ec13-8279d9a42621" testName="getListTest" computerName="HUANGBO" duration="00:00:00.0942424" startTime="2013-01-11T21:49:59.4687500+08:00" endTime="2013-01-11T21:50:01.4687500+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestProject.BZDaoTest.getListTest threw exception:  System.Data.SqlClient.SqlException: 列名 'Id' 无效。.</Message>
+          <StackTrace>    在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 zjzx.dao.BZDao.getList(String fieldList, String orderField, Boolean orderBy, Int32 pageIndex, Int32 pageSize, String where) 位置 D:\dev\质检中心\zjzx\zjzx\dao\BZDao.cs:行号 129
+   在 TestProject.BZDaoTest.getListTest() 位置 D:\dev\质检中心\zjzx\TestProject\BZDaoTest.cs:行号 86
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

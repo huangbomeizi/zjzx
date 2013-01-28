@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="01e326cc-3698-471a-8e0d-e193dc89d45b" name="Administrator@HUANGBO 2013-01-11 21:44:04" runUser="HUANGBO\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="50217ff5-54f5-4137-b9f0-540332b39484">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="D:\dev\质检中心\zjzx\TestResults\Administrator_HUANGBO 2013-01-11 21_44_04">
+      <DeploymentItem filename="D:\dev\质检中心\zjzx\zjzx\bin\zjzx.dll" />
+    </Deployment>
+    <Plugins>
+      <Plugin>Microsoft.VisualStudio.TestTools.HostAdapters.AspNetPlugin, Microsoft.VisualStudio.QualityTools.HostAdapters.ASPNETAgent</Plugin>
+    </Plugins>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2013-01-11T21:44:04.4218750+08:00" queuing="2013-01-11T21:44:07.1562500+08:00" start="2013-01-11T21:44:07.7968750+08:00" finish="2013-01-11T21:44:37.6718750+08:00" />
+  <TestDefinitions>
+    <UnitTest name="getListTest" storage="d:\dev\质检中心\zjzx\testproject\bin\debug\testproject.dll" id="1ee2a08a-19a4-0172-ec13-8279d9a42621">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="0c2cc4a4-f7e6-4b36-8609-1fa4878e3d5d" />
+      <TestMethod codeBase="D:\dev\质检中心\zjzx\TestProject\bin\Debug\TestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.BZDaoTest, TestProject" name="getListTest" />
+      <AspNet webSiteUrl="http://localhost:1269/">
+        <Host pathToWebApp="%PathToWebRoot%\zjzx\zjzx" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1ee2a08a-19a4-0172-ec13-8279d9a42621" executionId="0c2cc4a4-f7e6-4b36-8609-1fa4878e3d5d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="0c2cc4a4-f7e6-4b36-8609-1fa4878e3d5d" testId="1ee2a08a-19a4-0172-ec13-8279d9a42621" testName="getListTest" computerName="HUANGBO" duration="00:00:00.0859014" startTime="2013-01-11T21:44:28.9531250+08:00" endTime="2013-01-11T21:44:36.7968750+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestProject.BZDaoTest.getListTest threw exception:  System.TypeInitializationException: “zjzx.dao.SQLString”的类型初始值设定项引发异常。 ---&gt;  System.NullReferenceException: 未将对象引用设置到对象的实例。.</Message>
+          <StackTrace>    在 zjzx.dao.SQLString..cctor() 位置 D:\dev\质检中心\zjzx\zjzx\dao\SQLString.cs:行号 17
+ --- End of inner exception stack trace ---
+    在 zjzx.dao.BZDao.getList(String fieldList, String orderField, Boolean orderBy, Int32 pageIndex, Int32 pageSize, String where) 位置 D:\dev\质检中心\zjzx\zjzx\dao\BZDao.cs:行号 107
+   在 TestProject.BZDaoTest.getListTest() 位置 D:\dev\质检中心\zjzx\TestProject\BZDaoTest.cs:行号 86
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

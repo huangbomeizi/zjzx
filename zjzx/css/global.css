@@ -1,0 +1,16 @@
+﻿*{padding:0px;margin:0px;font-size:12px;}
+#search{width:100%; text-align:left}
+#search ul{height:30px; text-align:left; line-height:25px;}
+#search ul li{height:30px;line-height:25px;float:left; list-style:none;padding-left:3px}
+#function{width:100%; text-align:left; height:30px}
+#function ul{list-style:none;}
+#function ul li{ list-style:none; float:left; height:30px; line-height:25px;padding-left:3px}
+#list{width:100%}
+#mytable{width:100%}
+#mytable th {font: bold 12px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;color: #4f6b72;border-right: 1px solid #C1DAD7;border-bottom: 1px solid #C1DAD7;border-top: 1px solid #C1DAD7;letter-spacing: 2px;text-transform: uppercase;text-align: left;padding: 6px 6px 6px 12px;background: #CAE8EA  no-repeat;}
+#mytable td {border-right: 1px solid #C1DAD7;border-bottom: 1px solid #C1DAD7;font-size:12px;padding: 6px 6px 6px 12px;color: #4f6b72;}
+#mytable td a:link,#mytable td a:visited{ text-decoration:none;}
+#mytable tr.hover{ background:#F0F8FF;}
+#mytable tr.libg{ background:#F9F9F9;}
+#page{height:30px;width:100%;text-align:right; padding-left:3px;}
+#AspNetPager1{float:right;padding-right:10px; height:30px; line-height:25px;}

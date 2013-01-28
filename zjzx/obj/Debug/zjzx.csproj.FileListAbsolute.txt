@@ -1,0 +1,6 @@
+D:\dev\质检中心\zjzx\zjzx\bin\zjzx.dll
+D:\dev\质检中心\zjzx\zjzx\bin\zjzx.pdb
+D:\dev\质检中心\zjzx\zjzx\obj\Debug\ResolveAssemblyReference.cache
+D:\dev\质检中心\zjzx\zjzx\obj\Debug\zjzx.dll
+D:\dev\质检中心\zjzx\zjzx\obj\Debug\zjzx.pdb
+D:\dev\质检中心\zjzx\zjzx\bin\AspNetPager.dll
