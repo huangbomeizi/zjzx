@@ -44,6 +44,7 @@
                         <td><%#Container.ItemIndex+1 %></td>
                         <td><%#Container.ItemIndex+1 %></td>
                         <td><%#Container.ItemIndex+1 %></td>
+                        <td><%#Container.ItemIndex+1 %></td>
                         <td>
                             <asp:LinkButton ID="btnSee" runat="server" Text="查看" CommandName="delete" CommandArgument='<%#Eval("Id") %>' />&nbsp;
                             <asp:LinkButton ID="btnUpdate" runat="server" Text="修改" CommandName="update" CommandArgument='<%#Eval("Id") %>' />                        

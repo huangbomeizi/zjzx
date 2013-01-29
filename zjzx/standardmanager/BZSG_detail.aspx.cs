@@ -19,5 +19,10 @@ namespace zjzx.standardmanager
         {
 
         }
+
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
