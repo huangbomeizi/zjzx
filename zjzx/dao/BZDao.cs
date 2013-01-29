@@ -125,7 +125,6 @@ namespace zjzx.dao
             table.PageSize = pageSize;
             table.PageIndex = pageIndex;
 
-
             using (SqlConnection conn = new SqlConnection(SQLString.connString))
             {
                 SqlCommand cmd = conn.CreateCommand();
