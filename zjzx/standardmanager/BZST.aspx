@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BZSG.aspx.cs" Inherits="zjzx.standardmanager.BZSG" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BZST.aspx.cs" Inherits="zjzx.standardmanager.BZST" %>
 <%@ Register Assembly="AspNetPager" Namespace="Wuqi.Webdiyer" TagPrefix="webdiyer" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
-<head runat="server">
-    <title>标准申购单</title>
+<head id="Head1" runat="server">
+    <title>标准上传</title>
     <link href="../css/global.css" rel="stylesheet" type="text/css" />
     <script src="../js/jquery-1.8.0.js" type="text/javascript"></script>
     <script src="../js/global.js" type="text/javascript"></script>
@@ -14,32 +14,30 @@
     <div id="search">
         <ul>
             <li>标准号：<input type="text" id="txtBZH" /></li>
-            <li>申购单号：<input type="text" id="txtSGDH" /></li>
+            <li>标准名称：<input type="text" id="txtBZMC" /></li>
             <li><input type="button" id="btnSearch" value="搜 索" class="button"/></li>
         </ul>
     </div>
     <div id="function">
         <ul>
-            <li><input type="button" id="btnAdd" value="填写申购单" class="button"/></li>
+            <li><input type="button" id="btnAdd" value="标准上传" class="button"/></li>
         </ul>
     </div>
     <div id="list">
         <table id="mytable">
             <tr>
                 <th>序号</th>
-                <th>申购单号</th>
                 <th>标准号</th>
                 <th>标准名称</th>
-                <th>申购人</th>
-                <th>申购时间</th>
-                <th>批准状态</th>
-                <th>执行情况</th>
+                <th>发布日期</th>
+                <th>实施日期</th>
+                <th>作废日期</th>
+                <th>状态</th>
                 <th>操作</th>
              </tr>
             <asp:Repeater ID="rData" runat="server">
                 <ItemTemplate>
                     <tr>
-                        <td><%#Container.ItemIndex+1 %></td>
                         <td><%#Container.ItemIndex+1 %></td>
                         <td><%#Container.ItemIndex+1 %></td>
                         <td><%#Container.ItemIndex+1 %></td>
@@ -55,7 +53,7 @@
                 </ItemTemplate>
             </asp:Repeater>
             <tr>
-                <td colspan="9" align="center">
+                <td colspan="8" align="center">
                     <asp:Literal ID="lempty" runat="server" Text="未找到任何数据记录！"></asp:Literal>
                 </td>
             </tr>

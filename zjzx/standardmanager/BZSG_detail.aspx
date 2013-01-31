@@ -14,64 +14,127 @@
             <tr>
                 <th width="140px" class="top"><span style="color:Red">*</span>申购单号：</th>
                 <td width="200px" class="top">
-                    <asp:TextBox ID="txtSbmc" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtSGDH" runat="server"></asp:TextBox>
                 </td>
                 <th width="140px" class="top"><span style="color:Red">*</span>申购人：</th>
                 <td class="top">
-                    <asp:TextBox ID="txtSgr" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtSGR" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <th>标准：</th>
                 <td colspan="3">
-                    标准号：<asp:TextBox ID="txtSbxh" runat="server"></asp:TextBox>
+                    标准号：<asp:TextBox ID="txtBZH" runat="server"></asp:TextBox>
                     &nbsp;
-                    标准名称：<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    标准名称：<asp:TextBox ID="txtBZMC" runat="server"></asp:TextBox>
                 </td>
             </tr>
              <tr>
                 <td></td>
                 <td colspan="3">
-                    标准号：<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                    标准号：<asp:TextBox ID="txtBZH2" runat="server"></asp:TextBox>
                     &nbsp;
-                    标准名称：<asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                    标准名称：<asp:TextBox ID="txtBZMC2" runat="server"></asp:TextBox>
                 </td>
             </tr>
              <tr>
                 <td></td>
                 <td colspan="3">
-                    标准号：<asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                    标准号：<asp:TextBox ID="txtBZH3" runat="server"></asp:TextBox>
                     &nbsp;
-                    标准名称：<asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                    标准名称：<asp:TextBox ID="txtBZMC3" runat="server"></asp:TextBox>
                 </td>
             </tr>
              <tr>
                 <td></td>
                 <td colspan="3">
-                    标准号：<asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+                    标准号：<asp:TextBox ID="txtBZH4" runat="server"></asp:TextBox>
                     &nbsp;
-                    标准名称：<asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+                    标准名称：<asp:TextBox ID="txtBZMC4" runat="server"></asp:TextBox>
                 </td>
             </tr>
              <tr>
                 <td></td>
                 <td colspan="3">
-                    标准号：<asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+                    标准号：<asp:TextBox ID="txtBZH5" runat="server"></asp:TextBox>
                     &nbsp;
-                    标准名称：<asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
+                    标准名称：<asp:TextBox ID="txtBZMC5" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    标准号：<asp:TextBox ID="txtBZH6" runat="server"></asp:TextBox>
+                    &nbsp;
+                    标准名称：<asp:TextBox ID="txtBZMC6" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    标准号：<asp:TextBox ID="txtBZH7" runat="server"></asp:TextBox>
+                    &nbsp;
+                    标准名称：<asp:TextBox ID="txtBZMC7" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    标准号：<asp:TextBox ID="txtBZH8" runat="server"></asp:TextBox>
+                    &nbsp;
+                    标准名称：<asp:TextBox ID="txtBZMC8" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    标准号：<asp:TextBox ID="txtBZH9" runat="server"></asp:TextBox>
+                    &nbsp;
+                    标准名称：<asp:TextBox ID="txtBZMC9" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    标准号：<asp:TextBox ID="txtBZH10" runat="server"></asp:TextBox>
+                    &nbsp;
+                    标准名称：<asp:TextBox ID="txtBZMC10" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <th>申购原因：</th>
                 <td colspan="3">
-                    <asp:TextBox ID="txtSgyy" runat="server"  Width="525px"></asp:TextBox>
+                    <asp:TextBox ID="txtSGYY" runat="server"  Width="525px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <th>部长：</th>
+                <td>
+                    <asp:TextBox ID="txtBuZhang" runat="server"></asp:TextBox>
+                </td>
+                <th>是否同意：</th>
+                <td>
+                    <asp:DropDownList ID="ddlBuZhangeTongYi" runat="server">
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <th>部长意见：</th>
+                <td colspan="3">
+                    <asp:TextBox ID="txtBuZhangeYiJian" runat="server"  Width="525px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <th>执行情况：</th>
+                <td colspan="3">
+                    <asp:TextBox ID="txtZXQK" runat="server"  Width="525px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 
                 <td colspan="4" align="center" style="height:35px">
-                <asp:Button ID="Button1" runat="server" Text="保 存" CssClass="button" />
-                <asp:Button ID="Button2" runat="server" Text="取 消" CssClass="button"/>
+                    <asp:Button ID="btnSave" runat="server" Text="保 存" CssClass="button" />&nbsp;
+                    <asp:Button ID="btnCancle" runat="server" Text="取 消" CssClass="button"/>
                 </td>
             </tr>
         </table>
